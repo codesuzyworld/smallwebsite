@@ -16,12 +16,12 @@ a:link{
 
 /* Color after a link is visited */
 a:visited{
-    color: #fc0;
+    color: rgb(126, 73, 64);
 }
 
 /* Link hovered */
 a:hover{
-    color: #03F;
+    color: rgb(137, 87, 87);
 }
 
 /* The moment the link is clicked */
@@ -50,23 +50,24 @@ a:active{
 /*Box model that wraps around HTML elements*/
 /*Content, padding,borders and margins*/
 .box{
-    margin:10px;
+    
     padding:10px;
-    background-color: #f1abab;
+    background-color: #ffdcdc;
     border-width:1px;
     border-color:black;
-    border-style:solid; /*Border style, can be dotted, dashed, and even 3D inset*/
+    border-style:none; 
+    border-radius: 0 0 30px 30px;/*Border style, can be dotted, dashed, and even 3D inset*/
     clear:both; /*The element is pushed below both left and right floated elements*/
 }
 
 /*Nav Menu Bar box styling*/
 .nav{
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
     padding: 10px;
-    background-color: #c27575;
+    background-color: #c38f8f;
     border-width: 1px;
     border-color: rgb(255, 255, 255);
-    border-style: solid;
+    border-style: none;
     color: #ffffff;
 }
 
@@ -74,11 +75,11 @@ a:active{
 .left{
     width: 20%;
     margin: 10px;
-    padding: 10px;
-    background-color: #e3caca;
+    padding: 20px;
+    background-color: #f9f0f0;
     border-width: 1px;
-    border-color: black;
-    border-style: solid;
+    border-radius: 20px;
+    border-style: none;
     float:left; /*Pushes the box to the left!*/
 }
 
@@ -86,11 +87,12 @@ a:active{
 .centre{
     width: 47%;
     margin: 10px;
-    padding: 10px;
-    background-color: #f3e4e4;
+    padding: 30px;
+    background-color: #f9f0f0;
     border-width: 1px;
     border-color: black;
-    border-style: solid;
+    border-radius: 20px;
+    border-style: none;
     text-align: center;
     float:left; 
 }
@@ -99,22 +101,21 @@ a:active{
 .right{
     width: 20%;
     margin: 10px;
-    padding: 10px;
-    background-color: #e3caca;
+    padding: 20px;
+    background-color: #f9f0f0;
     border-width: 1px;
-    border-color: black;
-    border-style: solid;
+    border-radius: 20px;
+    border-style: none;
     float:right; 
 }
 
 /*Lower Nav*/
 .lowernav{
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
     padding: 10px;
-    background-color: #c27575;
+    background-color: #c38f8f;
     border-width: 1px;
-    border-color: black;
-    border-style: solid;
+    border-style: none;
     color: #ffffff;
     clear:both; 
     /*We had left right elements above, so we are pushing it down*/
@@ -135,12 +136,10 @@ a:active{
     height:auto;
 }
 .legal{
-    margin:10px;
+    margin: 10px 0px 10px 0px;
     padding: 10px;
     background-color: #f9e5e5;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
+    border-style: none;
     float:none; 
     clear:both;
 }
